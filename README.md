@@ -1,6 +1,22 @@
 # NiedzielaElixir
 
-**TODO: Add description**
+This is an attempt to rewrite https://github.com/matisnape/niedziela into Elixir.
+
+## TODO
+- Find out how to pass data to Router
+- Write a module for handling calculations based on current date
+- Write a module for defining closed
+- Update view with variables
+- Handle scrape with Floki https://github.com/philss/floki
+- I18n - https://github.com/elixir-lang/gettext
+- Write tests
+
+## Config
+
+`mix deps.get`
+`mix run --no-halt`
+
+Go to http://localhost:8080
 
 ## Installation
 
