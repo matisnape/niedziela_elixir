@@ -11,7 +11,10 @@ defmodule NiedzielaElixir.Router do
   plug :dispatch
 
   get "/" do
-    send_resp(conn, 200, "Welcome")
+    page = EEx.eval_file("views/index.html.eex")
+    conn
+    |> put_resp_content_type("text/html")
+    |> send_resp(200, page)
   end
 
   get "/hello" do

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-20209372-17"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-20209372-17');
+    </script>
+    <style>
+      <%= EEx.eval_file("static/niedziela.css.eex")%>
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+    <meta property="og:title" content="Czy dzisiaj sklepy są otwarte?">
+    <meta name="description" content="Sprawdź, czy dzisiaj zrobisz zakupy. Obsługuję takze święta.">
+    <meta property="og:description" content="Sprawdź, czy dzisiaj zrobisz zakupy. Obsługuję takze święta.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Czy dzisiaj sklepy są otwarte?</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="header">
+        <p>Date</p>
+        <p>Shops</p>
+      </div>
+      <div id="footer">
+        <p>Lista świąt i niedziel niehandlowych pobrana <a href='https://pl.wikipedia.org/wiki/Zakaz_handlu_w_niedziele_i_%C5%9Bwi%C4%99ta' target='_blank' >stąd</a>
+         i <a href='https://www.kalendarzswiat.pl/swieta/wolne_od_pracy/' target='_blank' >stąd</a>.</p>
+        <p><a href='https://anks.pl'>anks.pl</a></p>
+      </div>
+    </div>
+  </body>
+</html>
