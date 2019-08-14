@@ -1,4 +1,4 @@
-defmodule NiedzielaElixir.HelloWorldPlug do
+defmodule NiedzielaElixir.Plug.HelloWorldPlug do
   import Plug.Conn
 
   def init(options), do: options

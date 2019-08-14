@@ -10,7 +10,7 @@ defmodule NiedzielaElixir.Application do
     children = [
       # Starts a worker by calling: NiedzielaElixir.Worker.start_link(arg)
       # {NiedzielaElixir.Worker, arg}
-      {Plug.Cowboy, scheme: :http, plug: NiedzielaElixir.HelloWorldPlug, options: [port: 8080]}
+      {Plug.Cowboy, scheme: :http, plug: NiedzielaElixir.Router, options: [port: cowboy_port()]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
@@ -21,4 +21,6 @@ defmodule NiedzielaElixir.Application do
 
     Supervisor.start_link(children, opts)
   end
+
+  defp cowboy_port, do: Application.get_env(:niedziela_elixir, :cowboy_port, 8080)
 end
