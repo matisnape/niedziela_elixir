@@ -1,6 +1,6 @@
 # NiedzielaElixir
 
-This is an attempt to rewrite https://github.com/matisnape/niedziela into Elixir.
+This is an attempt to rewrite https://github.com/matisnape/niedziela into Elixir with Plug and Router.
 
 ## TODO
 - Find out how to pass data to Router
@@ -13,8 +13,10 @@ This is an attempt to rewrite https://github.com/matisnape/niedziela into Elixir
 
 ## Config
 
-`mix deps.get`
-`mix run --no-halt`
+```
+mix deps.get
+mix run --no-halt
+```
 
 Go to http://localhost:8080
 
