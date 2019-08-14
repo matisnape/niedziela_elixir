@@ -11,6 +11,8 @@ defmodule NiedzielaElixir.Router do
   plug :dispatch
 
   get "/" do
+    conn = assign(conn, :data, "anks")
+    IO.inspect(conn.assigns[:data])
     page = EEx.eval_file("views/index.html.eex")
     conn
     |> put_resp_content_type("text/html")
