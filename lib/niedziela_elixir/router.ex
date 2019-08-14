@@ -10,10 +10,9 @@ defmodule NiedzielaElixir.Router do
   plug :match
   plug :dispatch
 
-  get "/" do
-    conn = assign(conn, :data, "anks")
+  get "/", assigns: %{data: "anks"} do
     IO.inspect(conn.assigns[:data])
-    page = EEx.eval_file("views/index.html.eex")
+    page = EEx.eval_file("views/index.html.eex", data: "anks")
     conn
     |> put_resp_content_type("text/html")
     |> send_resp(200, page)

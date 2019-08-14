@@ -18,7 +18,7 @@
     <meta name="description" content="Sprawdź, czy dzisiaj zrobisz zakupy. Obsługuję takze święta.">
     <meta property="og:description" content="Sprawdź, czy dzisiaj zrobisz zakupy. Obsługuję takze święta.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Czy dzisiaj sklepy są otwarte? "<% @conn.assigns[:data] %>"</title>
+    <title>Czy dzisiaj sklepy są otwarte? <%= data %></title>
   </head>
   <body>
     <div class="container">
